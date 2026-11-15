@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Student Management System</h1>
+        <p>Manage your student records easily</p>
+    </header>
+
+    <main>
+
+        <section class="form-section">
+
+            <h2>Add Student</h2>
+
+            <form id="studentForm">
+
+                <input type="text" id="studentName"
+                    placeholder="Enter Student Name" required>
+
+                <input type="text" id="rollNumber"
+                    placeholder="Enter Roll Number" required>
+
+                <input type="email" id="email"
+                    placeholder="Enter Email" required>
+
+                <input type="text" id="department"
+                    placeholder="Enter Department" required>
+
+                <input type="number" id="year"
+                    placeholder="Enter Year of Study"
+                    min="1" max="5" required>
+
+                <input type="tel" id="phone"
+                    placeholder="Enter Phone Number" required>
+
+                <button type="submit" id="submitBtn">
+                    Add Student
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="records-section">
+
+            <h2>Student Records</h2>
+
+            <input type="text" id="searchInput"
+                placeholder="Search students...">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Roll Number</th>
+                        <th>Email</th>
+                        <th>Department</th>
+                        <th>Year</th>
+                        <th>Phone</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentTableBody">
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
